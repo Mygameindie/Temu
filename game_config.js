@@ -33,6 +33,7 @@ window.GAME_CONFIG = {
   focusToFront: true,
   pets: [
     { artSuffix: "",   xFrac: 0.35, drawFilter: "none", z: 2 },
-    { artSuffix: "_2", xFrac: 0.65, drawFilter: "hue-rotate(140deg) saturate(1.2)", z: 1 },
+    { artSuffix: "_2", xFrac: 0.65, drawFilter: "hue-rotate(140deg) saturate(1.2)", z: 1, noParts: ["chest_L", "chest_R"] },
+
   ],
 };
