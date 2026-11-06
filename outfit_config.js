@@ -56,6 +56,8 @@ const DRESS1_SKIRT = {
 //                  the canvas height its skirt starts at (a dress: blows: 820).
 //    stiff: true   one solid piece over the chest (a crop top): stays whole on
 //                  the body, its sleeves still follow the arms.
+//    whole: true   kept in one piece exactly as drawn, carried by the body over
+//                  the chest (a bra): nothing of it is cut off with the arms.
 //    cuffs: true   its sleeve pictures are cuffs stuck to the top: drawn under
 //                  it and carried by the body, not turning with the arms,
 //                  so the arms are held still while it is worn.
@@ -136,7 +138,14 @@ window.OUTFIT_CONFIG = {
   ],
 
   pet1: {
-    topUnderwear:      ["topunderwear1", "topunderwear2", "topunderwear3", "topunderwear4"],
+    // whole: true = each bra stays in one piece exactly as drawn (its sides are
+    // not cut off with the arms).
+    topUnderwear:      [
+      { id: "topunderwear1", whole: true },
+      { id: "topunderwear2", whole: true },
+      { id: "topunderwear3", whole: true },
+      { id: "topunderwear4", whole: true },
+    ],
     bottomUnderwear:   [{ id: "bottomunderwear1", hangs: true }, "bottomunderwear2", "bottomunderwear3", "bottomunderwear4"],
     onepieceUnderwear: ["onepieceunderwear1"],
     top:               [{ id: "top1", stiff: true }],
